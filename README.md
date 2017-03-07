@@ -1,3 +1,3 @@
 # ArcticLine
 Get high together
-https://alexk89.github.io/Arcticline/
+https://alexk89.github.io/ArcticLine/
