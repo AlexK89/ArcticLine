@@ -1,0 +1,71 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: grey;
+}
+/*Navbar*/
+.navbar-default {
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  height: 70px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+  padding-top: 12px;
+}
+.navbar-brand img {
+  height: 40px;
+}
+.navbar-default .navbar-toggle {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border:none;
+  height: 38px;
+  width: 38px;
+  border-radius: 21px;
+  background-color: #ddd;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  width: 21px;
+}
+.navbar-default .navbar-collapse {
+  background: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #226db1;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.3em;
+    vertical-align: middle;
+    height: 70px;
+    transition: .4s;
+    padding-top: 25px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  background-color: rgba(34,109,177);
+  background-color: rgba(34,109,177,.9);
+  color: #fff;
+  transition: .4s;
+  border-radius: 0;
+}
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:active {
+  color: #fff;
+}
+/*=======================*/
+
+/*Background*/
+.background {
+    background: url('../img/background.jpg') no-repeat center center;
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    background-size:cover;
+    z-index:-1;
+    position: absolute;
+    top: 0;
+}
