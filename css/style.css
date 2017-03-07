@@ -73,7 +73,6 @@ body {
     position:fixed;
     background-size:cover;
     z-index:-1;
-    position: absolute;
     top: 70px;
     padding: 0;
 }
@@ -81,7 +80,7 @@ body {
   height: inherit;
   width: inherit;
   padding: 0;
-  background-color: rgba(0,0,0, .3);
+  background-color: rgba(0,0,0, .4);
 }
 /*=======================*/
 
@@ -92,11 +91,14 @@ body {
   height: 100vh;
 }
 .block-1 h1 {
-  margin-top: 45%;
+  margin-top: 300px;
   font-size: 5em;
   letter-spacing: 5px;
   font-weight: bold;
   cursor: default;
+}
+.block-1 h3 {
+  letter-spacing: 2px;
 }
 .block-1 p {
   transition: 0.4s;
@@ -174,9 +176,13 @@ body {
   color: grey;
   text-align: center;
   padding: 0;
+  padding-bottom: 50px;
 }
 .block-2-content {
   margin-top: 40px;
+}
+.block-2-content h1 {
+  cursor: default;
 }
 .block-2-content p {
   text-align: justify;
@@ -185,6 +191,7 @@ body {
   line-height: 1.7em;
 }
 .block-2-content button {
+  margin-top: 40px;
   margin-bottom: 20px;
   border: 5px solid #226db1;
   border-radius:5px;
@@ -200,4 +207,76 @@ body {
   transition: .3s;
   color: #fff;
   background: #226db1;
+}
+/*=====================*/
+
+/*Footer*/
+footer {
+  background: rgb(34,109,177);
+  background: rgba(34,109,177,0.7);
+}
+.adress,
+.phones {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.adress {
+  text-align: right;
+}
+.phone {
+  text-align: left;
+}
+.adress p,
+.phones p {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+footer a{
+  color: #aed7ed;
+}
+footer a:hover {
+  color: #aed7ed;
+}
+footer h5 {
+  text-align: center;
+  transition: .3s;
+  padding-bottom: 10px;
+}
+footer h5:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+@media (max-width:1025px) {
+  .block-1 p {
+    transition: 0.4s;
+    margin-top: 2%;
+  }
+}
+@media (max-width:767px) {
+  .block-1 h1 {
+    margin-top: 130px;
+  }
+  .block-1 p {
+    display: none;
+  }
+  .adress p,
+  .phones p {
+    text-align: center;
+  }
+  .adress,
+  .phones {
+    padding-top:20px;
+    padding-bottom: 0;
+  }
+}
+@media (max-width:414px) {
+  .block-1 h1 {
+    margin-top: 250px;
+  }
+  .block-1 h1 {
+    font-size: 3em;
+  }
+  .block-1 h3 {
+    font-size: 1.5em;
+  }
 }
