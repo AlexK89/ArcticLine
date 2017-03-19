@@ -132,8 +132,8 @@ aside ul {
   position: relative;
   transform-style: preserve-3d;
   transition: 0.5s;
+  height: inherit;
 }
-
 .first-side, .second-side {
   backface-visibility: hidden;
   position: absolute;
@@ -147,9 +147,9 @@ aside ul {
 .first-side {
   z-index: 2;
   transform: rotateY(0deg);
-  background-color: #50ABF1;
-  display: flex;
-  flex-direction: column;
+  background-color: rgb(34, 109, 177);
+  /*display: flex;
+  flex-direction: column;*/
   align-items: center;
   justify-content: space-between;
   color: #fff;
@@ -164,6 +164,8 @@ aside ul {
 	width:300px;
 	height:450px;
 	padding:22px 35px 35px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
   z-index: 3;
 	-webkit-transition: all 200ms ease-out;
        -moz-transition: all 200ms ease-out;
@@ -174,6 +176,8 @@ aside ul {
 	top:0;
 	background: rgb(34, 109, 177);
 	border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 	-webkit-transition: all 200ms ease-out;
        -moz-transition: all 200ms ease-out;
          -o-transition: all 200ms ease-out;
@@ -215,8 +219,8 @@ aside ul {
 .second-side {
   transform: rotateY(180deg);
   background-color: rgba(34, 109, 177, 0.9);
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+  flex-direction: column;*/
   align-items: center;
   justify-content: space-between;
   color: #fff;
