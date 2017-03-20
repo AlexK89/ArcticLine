@@ -189,6 +189,9 @@ body {
   font-size: 1.2em;
   line-height: 1.7em;
 }
+.block-2-content hr {
+  border:1px solid #1976D2;
+}
 .block-2-content button {
   margin-top: 40px;
   margin-bottom: 20px;
