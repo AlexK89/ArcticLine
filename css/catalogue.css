@@ -1,7 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background: grey;
-  color: #fff;
+  background: #ECEFF1;
+  color: #E3F2FD;
 }
 .row {
   margin: 0;
@@ -42,7 +42,7 @@ body {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #226db1;
+    color: #1976D2;
     font-weight: bold;
     text-align: center;
     font-size: 1.3em;
@@ -53,20 +53,21 @@ body {
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  background-color: rgba(34,109,177);
-  background-color: rgba(34,109,177,.9);
-  color: #fff;
+  background-color: #1976D2;
+  color: #E3F2FD;
   transition: .4s;
   border-radius: 0;
 }
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:active {
-  color: #fff;
+  color: #E3F2FD;
 }
 /*=======================*/
 
 /*Background*/
+/*Background*/
 .background {
+    background: url('../img/background.jpg') no-repeat center center;
     width:100%;
     height:100vh;
     position:fixed;
@@ -81,6 +82,7 @@ body {
   padding: 0;
   background-color: rgba(0,0,0, .4);
 }
+/*=======================*/
 /*=======================*/
 
 /*Content*/
@@ -107,8 +109,12 @@ aside ul {
    flex-flow: row wrap;
    -webkit-align-content: flex-end;
    align-content: flex-end;
-   padding: 0;
 }
+
+/*=====================*/
+
+/*Items section 1 */
+
 .card-container {
   height: 450px;
   width: 300px;
@@ -116,8 +122,7 @@ aside ul {
   margin: 20px 5px;
   float: left;
 }
-
-.card-container.flip .card-flip {
+.card-container.flip {
   transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -130,7 +135,7 @@ aside ul {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   transition: 0.5s;
 }
-.card-flip {
+.card-container {
   position: relative;
   transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
@@ -138,7 +143,6 @@ aside ul {
   -moz-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transition: 0.5s;
-  height: inherit;
 }
 .first-side, .second-side {
   backface-visibility: hidden;
@@ -164,7 +168,7 @@ aside ul {
   background-color: rgba(34, 109, 177, 0);
   align-items: center;
   justify-content: space-between;
-  color: #fff;
+  color: #E3F2FD;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -172,15 +176,13 @@ aside ul {
   border-radius: 5px;
 }
 .stats-container{
-	background:#226db1;
+	background:#1976D2;
 	position:absolute;
 	top:356px;
 	left:0;
 	width:300px;
 	height:450px;
 	padding:22px 35px 35px;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
   z-index: 3;
 	-webkit-transition: all 200ms ease-out;
        -moz-transition: all 200ms ease-out;
@@ -189,7 +191,7 @@ aside ul {
 }
 .card-container:hover .stats-container {
 	top:0;
-	background: rgb(34, 109, 177);
+	background: #1976D2;
 	border-top: none;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -197,12 +199,19 @@ aside ul {
        -moz-transition: all 200ms ease-out;
          -o-transition: all 200ms ease-out;
             transition: all 200ms ease-out;
+}.stats-container-content h6 {
+  text-transform: uppercase;
+}
+.stats-container-content>p {
+  margin-top: 25px;
 }
 .stats-container-content p {
   font-size: 0.85em;
 }
 .product_name {
   margin-top: 0;
+  font-size: 1.4em;
+  cursor: default;
 }
 .view_details {
   position: absolute;
@@ -213,9 +222,9 @@ aside ul {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-  color: #fff;
+  color: #E3F2FD;
   display: none;
-  border:2px solid #fff;
+  border:2px solid #E3F2FD;
 	font-size:1em;
 	text-transform:uppercase;
 	font-weight:700;
@@ -224,7 +233,8 @@ aside ul {
 }
 .view_details:hover{
 	background:#fff;
-	color:rgba(34, 109, 177, 0.9);
+	color:#1976D2;
+  border-color: #fff;
 	cursor:pointer;
 }
 .card-container:hover .view_details {
@@ -237,26 +247,27 @@ aside ul {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
-  background-color: rgba(34, 109, 177, 0.9);
+  background-color: #1976D2;
   align-items: center;
   justify-content: space-between;
-  color: #fff;
+  color: #E3F2FD;
   border-radius: 10px;
+  padding:28px 35px 35px 35px;
 }
-.second-side-container {
+/*.second-side-container {
   padding:28px 35px 35px 35px;
   width: 300px;
-}
+}*/
 .back-to-home,
-#card-1-submit {
+.card-submit {
   background: none;
   width: 230px;
   margin: auto;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-  color: #fff;
-  border:2px solid #fff;
+  color: #E3F2FD;
+  border:2px solid #E3F2FD;
 	font-size:1em;
 	text-transform:uppercase;
 	font-weight:700;
@@ -267,17 +278,18 @@ aside ul {
   position: absolute;
   top: 10px;
 }
-#card-1-submit {
+.card-submit {
   position: absolute;
   bottom: 10px;
   left: 35px;
-  color: rgb(34,109,177);
+  color: #1976D2;
   background: #fff;
 }
 .back-to-home:hover,
-#card-1-submit:hover {
+.card-submit:hover {
 	background:#fff;
-	color:rgba(34, 109, 177, 0.9);
+	color:#1976D2;
+  border-color: #fff;
 	cursor:pointer;
 }
 .second-side-form {
@@ -298,20 +310,20 @@ aside ul {
 }
 
 .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.is-focused .mdl-textfield__label {
-    color: #fff;
+    color: #E3F2FD;
     font-size: 0.85em;
 }
 .mdl-textfield__label {
-  color: #fff;
+  color: #E3F2FD;
   font-weight: lighter;
   font-size: 0.85em;
 }
 .mdl-textfield--floating-label.is-invalid .mdl-textfield__label {
-    color: #fff;
+    color: #E3F2FD;
     font-size: 0.85em;
 }
 .mdl-textfield__label:after {
-    background-color: #fff
+    background-color: #E3F2FD
 }
 
 .mdl-textfield.is-invalid .mdl-textfield__input {
@@ -319,15 +331,14 @@ aside ul {
 }
 
 .mdl-textfield.is-invalid .mdl-textfield__label:after {
-    background-color: #fff;
+    background-color: #E3F2FD;
 }
 /*========================*/
 
 /*=========================*/
 /*Footer*/
 footer {
-  background: rgb(34,109,177);
-  background: rgba(34,109,177,0.7);
+  background: #1976D2;
 }
 .adress,
 .phones {
@@ -362,6 +373,10 @@ footer h5:hover {
 }
 
 @media (max-width:767px) {
+  #content-block {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .adress p,
   .phones p {
     text-align: center;
